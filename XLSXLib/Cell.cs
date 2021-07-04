@@ -7,21 +7,18 @@ using System.Threading.Tasks;
 
 namespace XLSXLib
 {
-    class Cell
+    public class Cell
     {
-        public String Letter { get; }
-        public int Count { get; }
+        public String Location { get; }
+        public String Value { get; }
 
-        public Cell(String letter, int count)
+        public Cell(String location, String value)
         {
-            if (letter == null)
-                throw new NullReferenceException("There is no EMPTY letter.");
+            if (location == null)
+                throw new NullReferenceException("The location can't be empty");
 
-            if (count == 0)
-                throw new NullReferenceException("The cell count starts at 1");
-
-            this.Letter = letter;
-            this.Count = count;
+            this.Location = location;
+            this.Value = value;
         }
     }
 }
