@@ -14,7 +14,6 @@ namespace XLSXLib
         public String Filename { get; set; }
         public String Name { get; }
         public Worksheet[] Worksheets { get; }
-
         public Workbook()
         {
 
@@ -35,9 +34,10 @@ namespace XLSXLib
         {
             if (filename != null)
                 if (!System.IO.File.Exists(filename))
-                    throw new FileNotFoundException("File '" + filename + "' wasn't found.");
-           
+                    throw new FileNotFoundException("File '" + filename + "' wasn't found.");       
         }
+
+
     }
 
     
