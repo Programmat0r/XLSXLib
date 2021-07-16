@@ -10,7 +10,7 @@ namespace XLSXLib
     public class Cell
     {
         public String Location { get; }
-        public String Value { get; }
+        public String Value { get; set; }
 
         public Cell(String location, String value)
         {

@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Example\Corrupt.xlsx" />
     <None Include="Example\Testfile.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
