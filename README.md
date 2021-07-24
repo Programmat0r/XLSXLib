@@ -18,10 +18,10 @@ foreach (var row in workbook.Worksheets[0].Rows)
 {
     foreach (var cell in row.Cells)
     {
-        Console.Write(cell.Value;
+        Console.Write(cell.Value);
 
     }
-    Console.WriteLine("");
+
 }
 ```
 
